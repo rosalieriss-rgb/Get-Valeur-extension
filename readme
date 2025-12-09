@@ -1,0 +1,16 @@
+# Get Valeur – eBay Luxury Bag Extension
+
+Browser extension that shows resale intelligence directly on eBay listings
+for luxury handbags (Chanel, Hermès, Louis Vuitton…).
+
+## Current status
+
+- Demo overlay working in Chrome on eBay listing pages
+- Uses page price to generate fake comparable sales & estimated resale
+- Styling aligned with getvaleur.com
+
+## Next steps
+
+- Integrate with eBay APIs once developer account is approved
+- Replace fake comps with real historical sales
+- Add support for more categories and platforms
