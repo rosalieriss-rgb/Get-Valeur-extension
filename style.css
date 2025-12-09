@@ -1,0 +1,52 @@
+#getvaleur-panel {
+  position: fixed;
+  right: 0;
+  top: 80px;
+  width: 280px;
+  padding: 20px;
+  background: #0b1220;
+  border-left: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  z-index: 999999;
+  height: auto;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+}
+
+.gv-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.gv-section {
+  margin-bottom: 18px;
+}
+
+.gv-label {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.gv-value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.gv-good {
+  color: #00d18a;
+}
+
+.gv-list div {
+  margin-bottom: 4px;
+}
+
+.gv-footer {
+  margin-top: 20px;
+  font-size: 11px;
+  opacity: 0.6;
+  text-align: center;
+}

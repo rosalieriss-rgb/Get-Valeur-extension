@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Get Valeur – Demo Overlay",
+  "version": "0.1",
+  "description": "Simple test overlay for eBay pages.",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.ebay.com/*",
+        "*://www.ebay.fr/*",
+        "*://www.ebay.de/*",
+        "*://www.ebay.it/*",
+        "*://www.ebay.co.uk/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
