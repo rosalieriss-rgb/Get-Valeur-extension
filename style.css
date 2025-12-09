@@ -1,52 +1,139 @@
-#getvaleur-panel {
+/* styles.css */
+/* Valeur demo panel styling – dark, minimal, aligned with getvaleur.com */
+
+#get-valeur-panel {
   position: fixed;
-  right: 0;
-  top: 80px;
-  width: 280px;
-  padding: 20px;
-  background: #0b1220;
-  border-left: 1px solid rgba(255,255,255,0.1);
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  top: 90px;
+  right: 24px;
+  width: 320px;
+  background: radial-gradient(circle at top left, #020617 0%, #020617 40%, #020617 100%);
+  border-radius: 16px;
+  padding: 18px 18px 14px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.6);
+  color: #e5e7eb;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, "SF Pro Text",
+    sans-serif;
   z-index: 999999;
-  height: auto;
-  box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-sizing: border-box;
 }
 
-.gv-title {
-  font-size: 20px;
+/* Header */
+
+.gv-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 12px;
+}
+
+.gv-logo-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #0f172a 0%, #020617 80%);
+}
+
+.gv-logo-text {
+  font-size: 16px;
   font-weight: 600;
-}
-
-.gv-section {
-  margin-bottom: 18px;
-}
-
-.gv-label {
-  font-size: 12px;
-  opacity: 0.7;
-  margin-bottom: 4px;
-  text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
-.gv-value {
+.gv-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.gv-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.gv-subtitle {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* Sections */
+
+.gv-section {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(51, 65, 85, 0.9);
+}
+
+.gv-section-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.gv-deal-value {
   font-size: 18px;
   font-weight: 600;
-}
-
-.gv-good {
-  color: #00d18a;
-}
-
-.gv-list div {
   margin-bottom: 4px;
 }
 
+.gv-deal-price {
+  font-size: 13px;
+  color: #e5e7eb;
+}
+
+.gv-deal-price span {
+  font-weight: 500;
+}
+
+.gv-resale-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 4px;
+}
+
+.gv-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 4px 0 0 0;
+  font-size: 13px;
+}
+
+.gv-list li {
+  margin-bottom: 2px;
+}
+
+/* Footer */
+
 .gv-footer {
-  margin-top: 20px;
+  margin-top: 14px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(30, 41, 59, 0.9);
   font-size: 11px;
-  opacity: 0.6;
-  text-align: center;
+  color: #6b7280;
+}
+
+.gv-brand {
+  color: #38bdf8;
+  font-weight: 500;
+}
+
+/* Extras */
+
+.gv-muted {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.gv-hint {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #6b7280;
 }
